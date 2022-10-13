@@ -1,0 +1,9 @@
+---
+- name: My playbook
+  hosts: all
+  tasks:
+     - name: Testing update list
+       ansible.windows.win_updates:
+         category_names: '*'
+         state: searched
+         log_path: C:\Temp\ansible_wu.txt 

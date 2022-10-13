@@ -1,0 +1,7 @@
+---
+- name: Download updates
+  hosts: all
+  tasks:
+     - name: Download updates only
+       ansible.windows.win_updates:
+         state: downloaded
